@@ -32,7 +32,7 @@ while True:
     n = input('Угадай какое число от 1 до 100 у меня на уме! \n')
     if is_valid(n):
         num = int(n)
-        print(chislo)
+        # print(chislo)
         if num < chislo:
             print("Ваше число меньше загаданного, попробуйте еще разок")
             shot += 1
