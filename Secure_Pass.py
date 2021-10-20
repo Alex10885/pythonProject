@@ -30,4 +30,4 @@ for i in range(int(cntPw)):
     if chars.count(chars[i])>1:
         while chars[i]==random.sample(chars):
             chars.replace(i, random.sample(chars))
-print(*random.sample(chars, int(lenPw)), sep='')
+    print(*random.sample(chars, int(lenPw)), sep='')
