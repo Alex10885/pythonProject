@@ -4,7 +4,7 @@ digits = '0123456789'
 lowercase_letters = 'abcdefghijklmnopqrstuvwxyz'
 uppercase_letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 punctuation = '!#$%&*+-=?@^_'
-chars = ''
+chars: str = ''
 
 cntPw = input('Укажите количество паролей для генерации:')
 lenPw = input('Укажите длину одного пароля:')
@@ -27,7 +27,7 @@ if excOn == 'y':
         chars.replace(c, '')
 
 for i in range(int(cntPw)):
-    if chars.count(chars[i])>1:
-        while chars[i]==random.sample(chars):
+    if chars.count(chars[i]) > 1:
+        while chars[i] == random.sample(chars):
             chars.replace(i, random.sample(chars))
     print(*random.sample(chars, int(lenPw)), sep='')
